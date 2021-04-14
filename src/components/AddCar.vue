@@ -39,7 +39,8 @@ export default class AddCar extends Vue {
       year: this.carYear,
       color: this.carColor,
       status: "Open",
-      owner: "Test"
+      owner: "Test",
+      boolStatus: true,
     });
   }
 }
