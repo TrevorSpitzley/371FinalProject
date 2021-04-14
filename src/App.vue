@@ -23,7 +23,7 @@ import Client from './components/Client.vue';
 
 @Component({
   components: {
-    AppLogin, Seller, Client,
+    AppLogin,Seller, Client,
   },
 })
 
