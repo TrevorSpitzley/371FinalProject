@@ -5,6 +5,9 @@ import "firebase/firestore"
 import "firebase/auth"
 //import VueApexCharts from "vue-apexcharts";
 import { AppRouter } from "./app-routing";
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
+Vue.use(Vuetify)
 
 //Vue.use(VueApexCharts);
 

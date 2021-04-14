@@ -28,6 +28,9 @@
 import { Component, Vue } from "vue-property-decorator";
 import { FirebaseAuth, UserCredential } from "@firebase/auth-types";
 import "firebase/auth";
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
+Vue.use(Vuetify)
 
 const EM_REGEX = /([0-9a-z]+)@([a-z0-9]+\.)+(edu|com|org)$/;
 

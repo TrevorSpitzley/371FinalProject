@@ -23,22 +23,23 @@ import Client from './components/Client.vue';
 
 @Component({
   components: {
-    AppLogin,Seller, Client,
+    AppLogin, 
+    Seller, Client,
   },
 })
 
   //changing the APP properties
 export default class App extends Vue {
-  // readonly $appAuth!: FirebaseAuth;
+  //readonly $appAuth!: FirebaseAuth;
   $router: any;
 
   userLoggedIn(): boolean {
-    // return this.$appAuth.currentUser?.uid !== undefined;
+    //return this.$appAuth.currentUser?.uid !== undefined;
     return true;
   }
 
   doLogout(): void {
-    // this.$appAuth.signOut();
+    //this.$appAuth.signOut();
     this.$router.back();    // Go backward in the "history stack"
   }
 }
