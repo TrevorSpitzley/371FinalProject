@@ -8,7 +8,7 @@ Vue.use(VueRouter);
 const myRoutes: Array<RouteConfig> = [
   {
     name: "App Login",
-    path: "/AppLogin",
+    path: "/",
     component: AppLogin,
   },
   {
