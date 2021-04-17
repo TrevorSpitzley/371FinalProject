@@ -4,6 +4,11 @@ import firebase from "firebase/app"
 import "firebase/firestore"
 import "firebase/auth"
 import { AppRouter } from "./app-routing";
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
+Vue.use(Vuetify)
+
+Vue.config.productionTip = false
 
 const firebaseConfig = {
   apiKey: "AIzaSyDoRbbYkzZCcbrQ7zxQNrEtzjKhmWWofGQ",
@@ -15,8 +20,7 @@ const firebaseConfig = {
   measurementId: "G-6D9BEKNY8Q"
 };
 
-Vue.config.productionTip = false
-
+// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
 Vue.prototype.$appDB = firebase.firestore();
