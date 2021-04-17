@@ -5,7 +5,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-export default class Checkout extends Vue{
+export default class Reservation extends Vue{
   
 }
 </script>

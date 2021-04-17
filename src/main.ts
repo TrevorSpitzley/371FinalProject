@@ -6,6 +6,7 @@ import "firebase/auth"
 import { AppRouter } from "./app-routing";
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
+import vuetify from './plugins/vuetify';
 Vue.use(Vuetify)
 
 Vue.config.productionTip = false
@@ -29,5 +30,6 @@ Vue.prototype.$appAuth = firebase.auth();
 
 new Vue({
   router: AppRouter,
-  render: h => h(App),
+  vuetify,
+  render: h => h(App)
 }).$mount('#app')
